@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <title>Task6</title>
+</head>
+
+<body>
+
+    <script>
+        function alphaOrder() {
+            var str = document.getElementById("num1").value;
+            var arr = str.split("");
+            arr.sort();
+            var sortedStr = arr.join("");
+            alert("THE OUTPUT IS " + sortedStr);
+        }
+        
+    </script>
+    <br>
+    <div class="row col-4 mx-auto">
+        <br>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Enter a String: </span>
+            <input type="text" class="form-control" id="num1">
+        </div>
+        <button id="rev" class="btn btn-primary col mx-auto" onclick="alphaOrder()">Reverse</button>
+    </div>
+
+</body>
+
+</html>
